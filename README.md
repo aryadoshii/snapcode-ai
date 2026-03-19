@@ -40,23 +40,24 @@ Supercharged by **Kimi K2.5 Vision** and powered natively by [Qubrid AI](https:/
 ---
 
 ### 📥 Intuitive Uploads
-<img src="frontend/assets/2-upload.png" alt="Image Upload UI" width="1000"/>
+<img src="frontend/assets/2-input.png" alt="Image Upload UI" width="1000"/>
 
 *Drop any standard image, mockup, or wireframe. Add optional text notes to guide the AI's structural generation.*
 
 ---
 
-### ⚡ Live Code Generation
-<img src="frontend/assets/3-code.png" alt="Live Code Generation" width="1000"/>
 
-*Get complete syntax-highlighted HTML and Tailwind CSS code output instantly.*
+### 👁️ Real-time Responsive Preview
+<img src="frontend/assets/3-preview.png" alt="Live HTML Preview" width="1000"/>
+
+*Immediately visualize the AI-generated UI rendered correctly inside a scalable wide-mode iframe.*
 
 ---
 
-### 👁️ Real-time Responsive Preview
-<img src="frontend/assets/4-preview.png" alt="Live HTML Preview" width="1000"/>
+### ⚡ Live Code Generation
+<img src="frontend/assets/4-generation.png" alt="Live Code Generation" width="1000"/>
 
-*Immediately visualize the AI-generated UI rendered correctly inside a scalable wide-mode iframe.*
+*Get complete syntax-highlighted HTML and Tailwind CSS code output instantly.*
 
 ---
 
