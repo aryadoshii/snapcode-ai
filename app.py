@@ -9,7 +9,7 @@ from config.settings import APP_NAME
 st.set_page_config(
     page_title=APP_NAME,
     page_icon="⚡",
-    layout="centered",
+    layout="wide",
     initial_sidebar_state="expanded"
 )
 
@@ -92,29 +92,33 @@ def main():
     # 2. Render Header
     render_header()
     
-    # 3. Stacked Centered Layout (Vertical Layout)
+    # 3. Stacked Centered Layout (Vertical Layout via Columns to protect Wide Mode)
     st.markdown("<h2 style='text-align: center; margin-top: 2rem; margin-bottom: 1.5rem; font-size: 2.2rem; color: #ffffff;'>Input Design</h2>", unsafe_allow_html=True)
-    uploaded_file = render_upload_zone(upload_key=f"file_uploader_{st.session_state.uploader_key}")
     
-    user_note = ""
-    generate_clicked = False
+    in_c1, in_c2, in_c3 = st.columns([1, 2.5, 1])
     
-    if uploaded_file is not None:
-        width, height = get_image_dimensions(uploaded_file)
-        render_image_preview(uploaded_file, width, height)
+    with in_c2:
+        uploaded_file = render_upload_zone(upload_key=f"file_uploader_{st.session_state.uploader_key}")
         
-        st.markdown("<div style='text-align: center; margin-top: 2rem; margin-bottom: 0.5rem; font-weight: 600; color: #e2e8f0;'>Add a note for the AI (optional)</div>", unsafe_allow_html=True)
-        user_note = st.text_input(
-            "Note",
-            placeholder="e.g. Make it mobile-first, use dark theme...",
-            label_visibility="collapsed"
-        )
+        user_note = ""
+        generate_clicked = False
         
-        st.markdown("<br>", unsafe_allow_html=True)
-        generate_clicked = st.button("✨ Generate Code", type="primary", width="stretch")
-    
-    # 10vh spacer to beautifully transition the Result section downward
-    st.markdown("<div style='height: 10vh;'></div>", unsafe_allow_html=True)
+        if uploaded_file is not None:
+            width, height = get_image_dimensions(uploaded_file)
+            render_image_preview(uploaded_file, width, height)
+            
+            st.markdown("<div style='text-align: center; margin-top: 2rem; margin-bottom: 0.5rem; font-weight: 600; color: #e2e8f0;'>Add a note for the AI (optional)</div>", unsafe_allow_html=True)
+            user_note = st.text_input(
+                "Note",
+                placeholder="e.g. Make it mobile-first, use dark theme...",
+                label_visibility="collapsed"
+            )
+            
+            st.markdown("<br>", unsafe_allow_html=True)
+            generate_clicked = st.button("✨ Generate Code", type="primary", width="stretch")
+        
+        # 10vh spacer to beautifully transition the Result section downward
+        st.markdown("<div style='height: 10vh;'></div>", unsafe_allow_html=True)
     st.markdown("<hr style='border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 3rem 0;'>", unsafe_allow_html=True)
     
     st.markdown("<h3 style='text-align: center; margin-bottom: 1rem;'>Result</h3>", unsafe_allow_html=True)

@@ -39,24 +39,31 @@ Supercharged by **Kimi K2.5 Vision** and powered natively by [Qubrid AI](https:/
 
 ---
 
-### ⚡ Live Code Generation
-<img src="frontend/assets/2-generation.png" alt="Live Code Generation" width="1000"/>
+### 📥 Intuitive Uploads
+<img src="frontend/assets/2-upload.png" alt="Image Upload UI" width="1000"/>
 
-*Upload your design, provide custom instructions, and get complete syntax-highlighted code output instantly.*
+*Drop any standard image, mockup, or wireframe. Add optional text notes to guide the AI's structural generation.*
 
 ---
 
-### 👁️ Real-time Component Preview
-<img src="frontend/assets/3-preview.png" alt="Live HTML Preview" width="1000"/>
+### ⚡ Live Code Generation
+<img src="frontend/assets/3-code.png" alt="Live Code Generation" width="1000"/>
 
-*Immediately visualize the AI-generated HTML/Tailwind code rendered correctly inside a secure, scalable iframe.*
+*Get complete syntax-highlighted HTML and Tailwind CSS code output instantly.*
+
+---
+
+### 👁️ Real-time Responsive Preview
+<img src="frontend/assets/4-preview.png" alt="Live HTML Preview" width="1000"/>
+
+*Immediately visualize the AI-generated UI rendered correctly inside a scalable wide-mode iframe.*
 
 ---
 
 ### 📚 Interactive Sidebar History & Renaming
-<img src="frontend/assets/4-history.png" alt="Sidebar History" width="600"/>
+<img src="frontend/assets/5-history.png" alt="Sidebar History" width="600"/>
 
-*All your past UI generations are seamlessly saved to an SQLite database. Click the pencil icon to rename any component for quick reference!*
+*All your past UI generations are seamlessly saved to an SQLite database. Click the pencil icon to dynamically rename any component!*
 
 ---
 
