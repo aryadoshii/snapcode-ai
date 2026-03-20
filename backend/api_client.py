@@ -86,4 +86,4 @@ def generate_code_from_image(image_base64: str, mime_type: str, user_note: str =
                 pass
         return {"error": error_msg}
     except Exception as e:
-        return {"error": f"An unexpected error occurred: {str(e)}"}
+        return {"error": f"An unexpected error occurred: {str(e)}"} 
