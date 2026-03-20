@@ -170,7 +170,6 @@ nano .env  # Add your QUBRID_API_KEY inside
 # 7. Run the application
 streamlit run app.py
 ```
-
 ---
 
 <div align="center">
